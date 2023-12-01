@@ -1,0 +1,167 @@
+:root{
+    --red:crimson;
+    --white:whitesmoke;
+    --green:#53BF9D;
+    --yellow:#FFC54D;
+}
+
+body,h2,h3{
+    margin: 0px; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading{
+    background-image: url("/media/bkimg3.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: var(--white);
+}
+
+
+header a{
+   text-decoration: none;
+   color: var(--red);
+}
+
+header{
+    display: flex;   
+    padding: 1em;
+}
+
+.logo{
+    flex: 3;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+nav{
+    flex: 2;
+    display: flex;
+    align-items: center;  
+    
+}
+
+nav a{
+    flex: 1;    
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: var(--yellow);
+}
+
+.content{
+    height: 50vh;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    color: var(--white);
+    padding: 1em;    
+}
+
+.content div{
+    margin-top: 1em;
+}
+
+.tagline1{
+    color: var(--green) ;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.tagline2{
+    color: var(--yellow);
+}
+
+.content button{
+    width: 20vw;
+    background-color:var(--green);
+    border: 1px solid var(--green);
+    border-radius: 10px;
+    padding: 0.7em;
+    margin: 1em;
+    color: var(--white);
+    font-style: oblique;
+}
+
+.content button:hover{
+    background-color: chartreuse;
+    color: black;
+    cursor:pointer;   
+}
+
+.menu{
+    background-color: rgba(0,0,0,0.5);
+    color: var(--white);
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    /* justify-content: center; */
+}
+
+.menu table{
+    width: 100%;
+    padding: 1em;
+}
+
+.menu th{
+    color: var(--green);
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 1em;
+
+}
+
+.maincourse{
+    grid-row: span 2;
+}
+
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;    
+}
+
+.menu td:nth-child(1){
+    flex: 1;
+    justify-self: left; 
+}
+
+.menu td:nth-child(2){   
+    justify-self: right; 
+}
+
+
+
+#menuheading,#locationsheading{
+    background-color: rgba(0,0,0,0.5);
+    color: var(--yellow);
+    text-align: center;
+    font-weight: bold;
+    padding: 1em;
+}
+
+.locations{
+    background-color: rgba(0,0,0,0.5);
+    color: var(--white);
+    display: flex;
+    flex-wrap: wrap;   
+}
+
+.locations div{
+    flex: 1; 
+    padding: 1em;
+    min-width: 160px;  
+}
+
+.locations h2{
+    color: var(--green);
+    margin-bottom: 0.7em;
+}
+
+footer{
+    background-color: rgba(0,0,0,0.7);
+    color: var(--white);
+    padding:0.3em 1em;
+
+}
